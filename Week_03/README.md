@@ -1,1 +1,5 @@
-学习笔记
+### 作业思路及步骤
+1. 增加Httpclient请求工具在utils包下,在HttpOutboundHandler中的fetchGet方法调用这个工具类
+2. 增加过滤器的实现类HttpRequestFilterHeaders,放在filter包下，在HttpInboundHandler的channelRead方法在调用这个过滤器。
+3. HttpRequestFilterHeaders过滤器实现了增加一个token`{"nio","tangtian"}`,HttpOutboundHandler中fetchGet方法中获取了客户端请求的token并传给了真实的服务。
+4. 在router包下通过随机算法实现了简单的负载均衡HttpEndpointRouterRandom，在HttpOutboundHandler中的构造器中初始化了HttpEndpointRouterRandom
