@@ -34,4 +34,4 @@ build/
 .vscode/
 
 ### Java OUT ###
-.out/
+/Week_04/out/*
