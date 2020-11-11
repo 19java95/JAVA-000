@@ -23,7 +23,7 @@ target/
 /nbproject/private/
 /nbbuild/
 /dist/
-/out/
+
 /nbdist/
 /.nb-gradle/
 build/
@@ -32,3 +32,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Java OUT ###
+.out/
