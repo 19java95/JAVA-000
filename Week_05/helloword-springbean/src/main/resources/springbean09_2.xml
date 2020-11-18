@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean class="top.tangtian.springbean.springbean09.bean9_1.Config9_1"/>
+
+    <import resource="springbean09_1.xml"/>
+
+    <bean id="role9_3" class="top.tangtian.springbean.springbean09.bean3.Role9_3">
+        <constructor-arg name="user0101" ref="user0101"/>
+        <constructor-arg name="user0102" ref="user0102"/>
+    </bean>
+</beans>
