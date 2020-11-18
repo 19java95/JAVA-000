@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/util
+        https://www.springframework.org/schema/util/spring-util.xsd">
+    <bean class="top.tangtian.springbean.springbean07.User7_1"/>
+
+    <bean id="user7_2" class="top.tangtian.springbean.springbean07.User7_2"/>
+    <bean id="role7_1" class="top.tangtian.springbean.springbean07.Role7_1">
+            <constructor-arg ref="user7_2"/>
+    </bean>
+
+    <bean id="role7_2" class="top.tangtian.springbean.springbean07.Role7_2" c:user7_2-ref="user7_2"/>
+    <bean id="role7_3" class="top.tangtian.springbean.springbean07.Role7_3" c:_0-ref="user7_2"/>
+
+    <bean id="user7_3" class="top.tangtian.springbean.springbean07.User7_3">
+        <constructor-arg value="8"></constructor-arg>
+        <constructor-arg value="8_3"/>
+    </bean>
+
+    <bean id="user7_4" class="top.tangtian.springbean.springbean07.User7_4" c:id="8" c:name="8_4"/>
+    <bean id="user7_5" class="top.tangtian.springbean.springbean07.User7_5" c:_0="8" c:_1="8_5"/>
+
+    <bean id="user7_6" class="top.tangtian.springbean.springbean07.User7_6" >
+        <constructor-arg value="8"></constructor-arg>
+        <constructor-arg value="8_6"/>
+        <constructor-arg>
+            <null></null>
+        </constructor-arg>
+    </bean>
+
+    <bean id="user7_7" class="top.tangtian.springbean.springbean07.User7_7">
+        <constructor-arg value="8"/>
+        <constructor-arg value="8_7"/>
+        <constructor-arg>
+            <list>
+                <value>title1</value>
+                <value>title2</value>
+                <value>title3</value>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="title1Id" class="java.lang.String">
+        <constructor-arg value="title1"/>
+    </bean>
+    <bean id="title2Id" class="java.lang.String">
+        <constructor-arg value="title2"/>
+    </bean>
+    <bean id="title3Id" class="java.lang.String">
+        <constructor-arg value="title3"/>
+    </bean>
+
+    <bean id="user7_8" class="top.tangtian.springbean.springbean07.User7_8">
+        <constructor-arg value="8"/>
+        <constructor-arg value="8_8"/>
+        <constructor-arg>
+            <list>
+                <ref bean="title1Id"/>
+                <ref bean="title2Id"/>
+                <ref bean="title3Id"/>
+            </list>
+        </constructor-arg>
+    </bean>
+
+    <bean id="role7_5" class="top.tangtian.springbean.springbean07.Role7_5">
+        <property name="user7_2" ref="user7_2"/>
+    </bean>
+
+    <bean id="role7_6" class="top.tangtian.springbean.springbean07.Role7_6" p:user7_2-ref="user7_2"/>
+
+    <bean id="role7_7" class="top.tangtian.springbean.springbean07.Role7_7">
+        <property name="user7_2" ref="user7_2"/>
+        <property name="name" value="role7_7"></property>
+        <property name="titles">
+            <list>
+                <value>title1</value>
+                <value>title2</value>
+                <value>title3</value>
+            </list>
+        </property>
+    </bean>
+
+    <bean id="role7_8" class="top.tangtian.springbean.springbean07.Role7_8" p:user7_2-ref="user7-2" p:name="role7_8">
+        <property name="titles">
+            <list>
+                <value>title1</value>
+                <value>title2</value>
+                <value>title3</value>
+            </list>
+        </property>
+    </bean>
+
+    <util:list id="titlesId">
+        <value>title1</value>
+        <value>title2</value>
+        <value>title3</value>
+    </util:list>
+
+    <bean id="role7_9" class="top.tangtian.springbean.springbean07.Role7_9" p:user7_2-ref="user7-2" p:name="role7_8" p:titles-ref="titlesId"/>
+
+</beans>
