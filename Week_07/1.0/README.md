@@ -93,3 +93,6 @@ Version:5.7.32 (MySQL Community Server (GPL))
    ```
 
    表示配置成功
+
+## 读写分离-动态切换数据源版本1.0
+
