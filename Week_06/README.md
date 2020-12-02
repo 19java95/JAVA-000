@@ -1,8 +1,12 @@
+# 必做作业
+
+https://github.com/tangtian8/JAVA-000/blob/main/Week_06/examination_mall.sql
+
+
+
 # 选做
 
-### 给订单表增加100万条数据 
-
-1.创建存储过程
+用存储过程增加数据到内存表，从内存表插入数据到订单表
 
 ```sql
 CREATE DEFINER=`root`@`%` PROCEDURE `add_vote_record_memory`(IN n INT)
@@ -24,4 +28,12 @@ BEGIN
     END WHILE;
 END
 ```
+
+## 尝试对mysql不同引擎测试100万订单数据对增删改查性能
+
+|                | InnoDB | MEMORY | MyISAM |
+| -------------- | ------ | ------ | ------ |
+| 查询没有用索引 | 1670ms | 1031ms | 1022ms |
+| 查询用索引     | 662ms  | 651ms  | 627ms  |
+|                |        |        |        |
 

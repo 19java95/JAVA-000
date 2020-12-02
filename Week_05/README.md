@@ -90,5 +90,6 @@ Week_05/hello-jdbc目录下
 
 ## 选做作业
 
-### 
+### maven/spring的profile机制,都有什么用法
 
+spring的profile机制，可以对不同的环境做不同的配置。 然后只需要为不同的环境打包不同的配置即可。
