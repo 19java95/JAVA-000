@@ -4,17 +4,11 @@ Version:5.7.32 (MySQL Community Server (GPL))
 
 #### 插入1000000 的效率
 
-| Total Time（s） | Buffer Usage | Write per Second | 备注                                         |
-| --------------- | ------------ | ---------------- | -------------------------------------------- |
-| 4310            | 14.1%        | 232              | 通过存储过程直接插入到存储引擎为InnoDB的表中 |
-|                 |              |                  |                                              |
-|                 |              |                  |                                              |
-
-#### 
-
-
-
-
+| Total Time（s） | Buffer Usage | Write per Second | 备注                                                 |
+| --------------- | ------------ | ---------------- | ---------------------------------------------------- |
+| 4310            | 14.1%        | 232              | 通过存储过程直接插入到存储引擎为InnoDB的表中         |
+| 30              |              |                  | 同样的存储过程插入到MEEORY表。最后在插入到InnoDB的表 |
+|                 |              |                  |                                                      |
 
 ## mysql主从配置
 
@@ -95,4 +89,20 @@ Version:5.7.32 (MySQL Community Server (GPL))
    表示配置成功
 
 ## 读写分离-动态切换数据源版本1.0
+
+https://github.com/tangtian8/JAVA-000/tree/main/Week_07/1.0
+
+- [x] 基于spring/springboot,配置多个数据源(例如2个，master和slave)
+
+- [x] 根据具体的Service方法是否会操作数据,注入不同的数据源，1.0版本
+
+- [ ] 基于操作AbstractRoutingDataSource和自定义注解readOnly等,简化自动切换数据源
+
+- [ ] 支持配置多个从库
+
+- [ ] 支持多个从库的负载均衡
+
+## 读写分离-数据库框架版本2.0
+
+
 

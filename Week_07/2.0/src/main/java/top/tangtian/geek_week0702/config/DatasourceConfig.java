@@ -22,13 +22,13 @@ import javax.sql.DataSource;
 public class DatasourceConfig {
     private static final Logger LOG = LoggerFactory.getLogger(DatasourceConfig.class);
     @Bean("master")
-    @ConfigurationProperties(prefix = "spring.datasource.master")
+    @ConfigurationProperties(prefix = "sharding.jdbc.datasource.ds-master")
     public DataSource masterDataSource(){
         return DataSourceBuilder.create().build();
     }
 
     @Bean("slave")
-    @ConfigurationProperties(prefix = "spring.datasource.slave")
+    @ConfigurationProperties(prefix = "sharding.jdbc.datasource.ds-slave0")
     public DataSource slaveDataSource(){
         return DataSourceBuilder.create().build();
     }
