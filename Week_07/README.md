@@ -9,7 +9,6 @@ Version:5.7.32 (MySQL Community Server (GPL))
 | 4310            | 14.1%        | 232              | 通过存储过程直接插入到存储引擎为InnoDB的表中         |
 | 30              |              |                  | 同样的存储过程插入到MEEORY表。最后在插入到InnoDB的表 |
 |                 |              |                  |                                                      |
-
 ## mysql主从配置
 
 1. 拉取镜像`docker pull mysql:5.7`
@@ -105,4 +104,3 @@ https://github.com/tangtian8/JAVA-000/tree/main/Week_07/1.0
 ## 读写分离-数据库框架版本2.0
 
 https://github.com/tangtian8/JAVA-000/tree/main/Week_07/2.0
-
