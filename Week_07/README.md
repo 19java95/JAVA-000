@@ -104,5 +104,5 @@ https://github.com/tangtian8/JAVA-000/tree/main/Week_07/1.0
 
 ## 读写分离-数据库框架版本2.0
 
-
+https://github.com/tangtian8/JAVA-000/tree/main/Week_07/2.0
 
