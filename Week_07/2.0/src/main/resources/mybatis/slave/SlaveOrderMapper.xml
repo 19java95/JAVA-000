@@ -2,8 +2,8 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="top.tangtian.geek_week0702.mapper.slave.SlaveOrderMapper">
-    <select id="selectAll" resultType="top.tangtian.geek_week0702.entity.slave.OrderNo">
+<mapper namespace="top.tangtian.geek_week0802.mapper.slave.SlaveOrderMapper">
+    <select id="selectAll" resultType="top.tangtian.geek_week0802.entity.slave.OrderNo">
         select * from `order`
     </select>
 </mapper>

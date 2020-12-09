@@ -2,8 +2,8 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="top.tangtian.geek_week0702.mapper.master.MasterOrderMapper">
-    <select id="selectAll" resultType="top.tangtian.geek_week0702.entity.master.OrderNo">
+<mapper namespace="top.tangtian.geek_week0802.mapper.MasterOrderMapper">
+    <select id="selectAll" resultType="top.tangtian.geek_week0802.entity.OrderTest">
         select * from `order`
         <if test="ew!=null">
             ${ew.customSqlSegment}
