@@ -76,7 +76,7 @@ public final class Rpcfx {
                 System.out.println("error" + response);
                 throw new RpcException(ErrorCode.CONNECT_ERROR);
             }
-            return JSON.parse(response.getResult().toString());
+            return response.getResult();
         }
 
         private RpcfxResponse post(RpcfxRequest req, String url) throws IOException {
