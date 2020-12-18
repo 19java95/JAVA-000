@@ -11,9 +11,9 @@ import org.springframework.context.annotation.ImportResource;
  */
 @SpringBootApplication
 @ImportResource({"classpath:applicationContext.xml"})
-public class FETPApplication {
+public class UserbApplication {
     public static void main(final String[] args) {
-        SpringApplication springApplication = new SpringApplication(FETPApplication.class);
+        SpringApplication springApplication = new SpringApplication(UserbApplication.class);
         springApplication.setWebApplicationType(WebApplicationType.NONE);
         springApplication.run(args);
     }
