@@ -4,6 +4,29 @@
 
 https://github.com/tangtian8/JAVA-000/tree/main/Week_13/JMSActiveMQ
 
+#### ActiveMQ 搭建
+
+基于docker
+
+###### 拉取镜像
+
+```bash
+docker pull docker.io/webcenter/activemq
+```
+
+###### 查看镜像
+
+```bash
+docker images
+```
+
+###### 创建并运行容器
+
+```bash
+docker run -d --name acticemq_ian -p 61616:61616 -p 8161:8161 --restart=always docker.io/webcenter/activemq:latest
+4ad970e1f259df48065cafb6ccc0b36cdb84155012d8391eae708b1f440a8e20
+```
+
 #### 搭建一个 3 节点 Kafka 集群，测试功能和性能；实现 spring kafka 下对 kafka 集群的操作，将代码提交到 github
 
 https://github.com/tangtian8/JAVA-000/tree/main/Week_13/kafkaDemo/src
