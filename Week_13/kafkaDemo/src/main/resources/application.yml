@@ -1,0 +1,10 @@
+spring:
+  kafka:
+    bootstrap-servers: 120.79.218.62:9092,120.79.218.62:9093,120.79.218.62:9094
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+    consumer:
+      group-id: test-consumer-group
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserialikafka2zer: org.apache.kafka.common.serialization.StringDeserializer
