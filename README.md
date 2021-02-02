@@ -116,5 +116,5 @@ SpringBoot运行原理、基础配置、外部配置、日志配置、Profile配
 
 
 
-![总结](./zongjie.png)
+![总结](https://cdn.nlark.com/yuque/0/2021/png/2542319/1612274096175-e653a36c-e893-41a9-ae33-94cfca5f2899.png)
 
